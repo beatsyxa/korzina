@@ -1,0 +1,83 @@
+body{
+  font-family: Arial, sans-serif;
+}
+.nav{
+  margin-left: 20px;
+  padding: 0;
+}
+.nav li{
+  display: inline-block;
+  margin-right: 15px;
+}
+.nav li::after{
+  content: '>';
+  display: inline-block;
+  color: #a8abad;
+  padding-left: 15px;
+}
+.nav li:last-child::after{
+  display: none;
+}
+.nav li a{
+  color: #a8abad;
+	font-size: 14px;
+}
+h1{
+  margin-left: 20px;
+  color: #1d1d1d;
+  font-size: 48px;
+  font-weight: normal;
+}
+.block{
+  margin-top: 40px;
+  margin-left: 20px;
+  border-bottom: 2px solid black;
+}
+.block ul{
+  padding: 0;
+}
+.block ul li{
+  display: inline-block;
+  margin-right: 30px;
+}
+.block ul li a{
+  color: #7d7d7d;
+	font-size: 24px;
+  text-transform: uppercase;
+}
+.block ul li a.active{
+  display: block;
+  color: #1d1d1d;
+  position: relative;
+}
+.block ul li a.active:after{
+  content: '';
+  display: block;
+  width: 23px;
+  height: 14px;
+  position: absolute;
+  left: 50%;
+  bottom: -20px;
+  margin-left: -11.5px;
+  background: url('../img/tab_new.png');
+}
+.content{
+  width: 100%;
+  margin-top: 30px;
+  text-align: center;
+}
+.img1{
+  float:left;
+  width: 33.3%;
+}
+.img2{
+  float:left;
+  width: 33.3%;
+  padding-top: 100px;
+  text-align: center;
+}
+.img3{
+  float:left;
+  width: 33.3%;
+  text-align: right;
+}
